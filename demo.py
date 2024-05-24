@@ -1,4 +1,4 @@
-from color_print import print, FontColor, sepLine
+from awsPrint import print, FontColor, sepLine
 li = {
     'today': 'Mon',
     'time_hour': '15',
