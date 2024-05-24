@@ -24,15 +24,26 @@ print(li, color=FontColor.cyan, isFormat=True)
 你可以使用导入的print默认颜色输出，或者通过color参数修改颜色。
 
 🦄function: print  
+
         增加isFormat参数，是否使用pprint.pformat进行格式化
+
         增加color参数，指定颜色
+
         其余参数与python默认的print一致
 
+
 🦄function: sepLine 
+
         string:'——'  字符串
+
         multiple:50, 倍数
+
         color:FontColor.YELLOW  颜色
 
+
 🦄class: FontColor
+
         颜色类
+
         大写字符代表该颜色的高亮状态
+
