@@ -1,5 +1,8 @@
 # awsPrint: python的可以指定颜色的print
 
+
+```python -m pip install awsPrint```
+
 ```
 from awsPrint import print, FontColor, sepLine
 li = {
