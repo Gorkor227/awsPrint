@@ -1,7 +1,7 @@
-# color_print: python的可以指定颜色的print
+# awsPrint: python的可以指定颜色的print
 
 ```
-from color_print import print, FontColor, sepLine
+from awsPrint import print, FontColor, sepLine
 li = {
     'today': 'Mon',
     'time_hour': '15',
@@ -17,6 +17,7 @@ print(li, color=FontColor.CYAN)
 # [sepLine default] string:'——', multiple:50, color:FontColor.YELLOW
 sepLine(color=FontColor.WHITE)
 print(li, color=FontColor.cyan, isFormat=True)
+
 ```
 
 ![](./img/img.png)
