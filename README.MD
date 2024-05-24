@@ -17,7 +17,6 @@ print(li, color=FontColor.CYAN)
 # [sepLine default] string:'——', multiple:50, color:FontColor.YELLOW
 sepLine(color=FontColor.WHITE)
 print(li, color=FontColor.cyan, isFormat=True)
-
 ```
 
 ![](./img/img.png)
@@ -48,3 +47,32 @@ print(li, color=FontColor.cyan, isFormat=True)
 
         大写字符代表该颜色的高亮状态
 
+
+
+
+展示所有颜色
+```python
+from awsPrint import FontColor, sepLine, print
+def show_all_color():
+    colorLower = []
+    colorUpper = []
+    for font_key, font_value in FontColor.__dict__.items():
+        font_key: str
+        if not font_key.startswith('__'):
+            if font_key.islower() and font_key != 'reset':
+                colorLower.append((font_key, font_value))
+            elif font_key.isupper():
+                colorUpper.append((font_key, font_value))
+
+    print(colorLower, isFormat=True)(colorUpper, isFormat=True)
+    sepLine(color=FontColor.WHITE)
+    for lower, upper in zip(colorLower, colorUpper):
+        print(lower[0], color=lower[1], end=' ')(upper[0], color=upper[1])
+    print('reset', color=FontColor.reset)
+
+
+show_all_color()
+
+```
+
+![](./img/img_1.png)
