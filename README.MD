@@ -8,6 +8,6 @@ print.set_default_color(font_color.green)
 print('Hello world')
 ```
 
-![](./img/img.png)
+![](img/img.png)
 
 你可以使用导入的print默认颜色输出，或者通过set_default_color修改默认颜色。
