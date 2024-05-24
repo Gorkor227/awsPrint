@@ -22,6 +22,7 @@ print(li, color=FontColor.cyan, isFormat=True)
 ![](./img/img.png)
 
 你可以使用导入的print默认颜色输出，或者通过color参数修改颜色。
+
 🦄function: print  
         增加isFormat参数，是否使用pprint.pformat进行格式化
         增加color参数，指定颜色
