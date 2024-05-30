@@ -90,4 +90,6 @@ def print(*values: object, sep: Union[str, None] = ' ', end: Union[str, None] = 
     :param isFormat: False   --> By pprint.pformat
     :return:
     """
+    if not values:
+        values = '',
     return CPrint()(*values, sep=sep, end=end, file=file, isFormat=isFormat, color=color or FontColor.YELLOW)
